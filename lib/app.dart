@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:messy_cinema/features/movies/movies_screen.dart';
+import 'package:messy_cinema/features/movies/screens/movies_screen.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
