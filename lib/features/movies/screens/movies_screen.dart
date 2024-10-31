@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:messy_cinema/features/movies/repositories/database_repository.dart';
 import 'package:messy_cinema/features/movies/widgets/big_movie_carousel.dart';
 import 'package:messy_cinema/features/movies/widgets/small_movie_carousel.dart';
 
 class MoviesScreen extends StatelessWidget {
-  const MoviesScreen({super.key});
+  const MoviesScreen({super.key, required this.repository});
+
+  final DatabaseRepository repository;
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +18,7 @@ class MoviesScreen extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          BigMovieCarousel(),
+          BigMovieCarousel(repository: repository),
           const SmallMovieCarousel(),
         ],
       ),

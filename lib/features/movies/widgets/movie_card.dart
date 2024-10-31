@@ -9,10 +9,6 @@ class MovieCard extends StatelessWidget {
   });
 
   final MovieData movieData;
-  // final String imageUrl;
-  // final String movieTitle;
-  // final String movieTime;
-  // final String movieDescription;
 
   @override
   Widget build(BuildContext context) {
